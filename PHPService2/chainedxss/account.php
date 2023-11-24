@@ -6,7 +6,7 @@ print <<<END
  <a href="index.htm">Return Home</a>
  <h1>My Account</h1>
  <pre>
-  Username: $user
+  Username: htmlspecialchars($user)
   Email: neo@example.com
   Registered: June 21st, 2011</pre>
 
