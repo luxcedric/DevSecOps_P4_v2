@@ -315,11 +315,11 @@ function dvwaHtmlEcho( $pPage ) {
 
 		<title>{$pPage[ 'title' ]}</title>
 
-		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/css/main.css\" />
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . htmlspecialchars(DVWA_WEB_PAGE_TO_ROOT) . "dvwa/css/main.css\" />
 
-		<link rel=\"icon\" type=\"\image/ico\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "favicon.ico\" />
+		<link rel=\"icon\" type=\"\image/ico\" href=\"" . htmlspecialchars(DVWA_WEB_PAGE_TO_ROOT) . "favicon.ico\" />
 
-		<script type=\"text/javascript\" src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/js/dvwaPage.js\"></script>
+		<script type=\"text/javascript\" src=\"" . htmlspecialchars(DVWA_WEB_PAGE_TO_ROOT) . "dvwa/js/dvwaPage.js\"></script>
 
 	</head>
 
@@ -328,7 +328,7 @@ function dvwaHtmlEcho( $pPage ) {
 
 			<div id=\"header\">
 
-				<img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/logo.png\" alt=\"Damn Vulnerable Web Application\" />
+				<img src=\"" . htmlspecialchars(DVWA_WEB_PAGE_TO_ROOT) . "dvwa/images/logo.png\" alt=\"Damn Vulnerable Web Application\" />
 
 			</div>
 
@@ -352,13 +352,13 @@ function dvwaHtmlEcho( $pPage ) {
 			</div>
 
 			<div id=\"system_info\">
-				{$systemInfoHtml}
+				htmlspecialchars({$systemInfoHtml})
 			</div>
 
 			<div id=\"footer\">
 
 				<p>Damn Vulnerable Web Application (DVWA) v" . dvwaVersionGet() . "</p>
-				<script src='" . DVWA_WEB_PAGE_TO_ROOT . "/dvwa/js/add_event_listeners.js'></script>
+				<script src='" . htmlspecialchars(DVWA_WEB_PAGE_TO_ROOT) . "/dvwa/js/add_event_listeners.js'></script>
 
 			</div>
 
@@ -386,9 +386,9 @@ function dvwaHelpHtmlEcho( $pPage ) {
 
 		<title>{$pPage[ 'title' ]}</title>
 
-		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/css/help.css\" />
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . htmlspecialchars(DVWA_WEB_PAGE_TO_ROOT) . "dvwa/css/help.css\" />
 
-		<link rel=\"icon\" type=\"\image/ico\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "favicon.ico\" />
+		<link rel=\"icon\" type=\"\image/ico\" href=\"" . htmlspecialchars(DVWA_WEB_PAGE_TO_ROOT) . "favicon.ico\" />
 
 	</head>
 
