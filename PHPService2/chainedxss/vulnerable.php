@@ -1,6 +1,7 @@
 <?php
 require_once('../template/head.php');
 $q = $_GET['q'];
+$q = htmlspecialchars($g);
 
 print <<<END
 <script type="text/javascript">
