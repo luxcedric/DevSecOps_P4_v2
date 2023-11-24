@@ -1,6 +1,7 @@
 <?php
 require_once('../template/head.php');
 $q = $_GET['q'];
+$q = htmlspecialchars($q);
 
 print <<<END
 Here are the results for $q:
